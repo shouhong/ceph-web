@@ -77,6 +77,9 @@
           </div>
           <div class="panel-body">
             <p><b>Overall status:</b> {{.health.Output.OverallStatus}}</p>
+            <p><b>Detail:</b>  {{.health.Output.Detail}}</p>
+            <p><b>Summary:</b>  {{.health.Output.Summary}}</p>
+            <p><b>Health:</b>  {{.health.Output.Health}}</p>
             <p><b>Epoch:</b>  {{.health.Output.Timechecks.Epoch}}</p>
             <p><b>Round status:</b>  {{.health.Output.Timechecks.RoundStatus}}</p>
           </div>
@@ -145,6 +148,7 @@
           </div>
           <div class="panel-body">
               <p><b>Status:</b> {{.osdTree.Status}}</p>
+              <p><b>Nodes:</b> {{.osdTree.Output.Nodes}}</p>
           </div>
       </div>
 

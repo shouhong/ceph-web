@@ -274,7 +274,7 @@ type PgStat struct {
 
 func (c *MainController) Get() {
 
-	baseUrl := "http://127.0.0.1:5000/api/v0.1"
+	baseUrl := "http://192.168.1.87:5000/api/v0.1"
 	//baseUrl := "http://192.168.99.100:5000/api/v0.1"
 
 	// Request health
@@ -351,5 +351,5 @@ func (c *MainController) Get() {
 	}
 	c.Data["pgStat"] = pgStat
 
-	c.TplNames = "index.tpl"
+	c.TplName = "index.tpl"
 }
